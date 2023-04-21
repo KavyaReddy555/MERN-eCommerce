@@ -2,14 +2,13 @@
   "version": 2,
   "builds": [
     {
-      "src": "./backend/server.js",
+      "src": "package.json",
       "use": "@vercel/node"
     }
   ],
-  "routes": [
-    {
-      "src": "/backend/(.*)",
-      "dest": "/backend/"
-    }
-  ]
+  "routes": [],
+  "env": {},
+  "postbuild": {
+    "command": "npm run postbuild"
+  }
 }
