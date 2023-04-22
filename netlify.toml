@@ -1,5 +1,2 @@
 [build]
-  command = "npm run build"
-
-[build.postbuild]
-  command = "npm run postbuild"
+  command = "npm install --prefix frontend && npm run build --prefix frontend"
