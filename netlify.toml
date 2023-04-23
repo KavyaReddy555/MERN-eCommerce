@@ -3,6 +3,6 @@
 
 # Redirect with a 301
 [[redirects]]
-  from = "/api"
-  to = "https://mern-ecommerce-g8bh.onrender.com/api"
+  from = "/api/*"
+  to = "https://mern-ecommerce-g8bh.onrender.com/api/:splat"
   status = 301
