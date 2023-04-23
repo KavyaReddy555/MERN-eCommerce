@@ -1,2 +1,8 @@
 [build]
   command = "npm install --prefix frontend && npm run build --prefix frontend"
+
+# Redirect with a 301
+[[redirects]]
+  from = "/api"
+  to = "https://mern-ecommerce-g8bh.onrender.com/api"
+  status = 301
